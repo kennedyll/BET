@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta charset="utf-8">
+
+<head>
+
+    <title>BET'STYLES</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+
+            background-image: url("https://www.mktesportivo.com/wp-content/uploads/2021/03/neymar_puma-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            background-attachment: fixed;
+
+        }
+    </style>
+
+</head>
+
+<body>
+        <nav>
+    
+            <a class="logo" href="/">BET'STYLES</a>
+    
+            <ul class="nav-list" id="menu" style="display: none;">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Entrar</a></li>
+            </ul>
+    
+    
+            <div class="search-box"></div>
+            <input type="text" name="" placeholder="Faça sua pesquisa">
+    
+    
+    
+            <input id="hamburguer" type="checkbox" style="display: none;">
+    
+            <label for="hamburguer">
+                <div class="hamburguer" onclick="show()"></div>
+            </label>
+    
+        </nav>
+
+</body>
+
+<!-- <script>
+    window.confirm('Está gostando do nosso site?')
+    window.prompt('Ola! Qual o seu nome?')
+
+</script> -->
+
+<script>
+function show() {
+    let show = document.getElementById("menu").style.display
+    if(show == "none") {
+        document.getElementById("menu").style.display="inline"
+    } else {
+        show = document.getElementById("menu").style.display
+        document.getElementById("menu").style.display="none"
+    }
+    console.log(show)
+}
+
+</script>
+
+</html>
